@@ -1,0 +1,118 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: green;
+}
+.wrapper {
+  background-color: black;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.class1 {
+  height: 87vh;
+  width: 100%;
+}
+video {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+.class1 > div {
+  width: 20vw;
+  height: auto;
+  background: rgb(250, 250, 250s);
+  padding: 30px;
+  position: absolute;
+  top: 35vh;
+  left: 5vw;
+  backdrop-filter: blur(5px);
+}
+nav {
+  display: flex;
+  background: purple;
+  flex-wrap: wrap;
+
+  position: sticky;
+  top: 0;
+  padding: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  z-index: 10;
+  font-size: 2rem;
+  width: 100%;
+}
+nav > div {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+
+  gap: 3vw;
+}
+nav ul li:hover {
+  color: Red;
+  transform: scale(1.5);
+  background: green;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+.class1 .down {
+  font-size: 5rem;
+  animation: dwn 2s linear infinite;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+}
+@keyframes dwn {
+  0% {
+    transform: translateX(0%) translateY(0%) rotate(90deg);
+  }
+  100% {
+    transform: translateX(0%) translateY(100%) rotate(90deg);
+  }
+}
+
+/* ++++++++++++++++section++++++++++ */
+[class^="s"] {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s1 {
+  background: url(./assets/a.jpg) center center no-repeat;
+  color: black;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.parallax {
+  background: rgba(25, 230, 55, 0.5);
+  padding: 2rem;
+  font-size: 2rem;
+  border-radius: 30px;
+}
+
+footer {
+  text-align: center;
+  min-height: 20rem;
+}
+footer .GOUP {
+  right: 4rem;
+  bottom: 10rem;
+  position: fixed;
+  font-size: 40px;
+  transform: rotate(270deg);
+  background: red;
+  border-radius: 30px;
+  padding: 7px;
+}
